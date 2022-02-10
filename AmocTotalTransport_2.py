@@ -477,7 +477,7 @@ fig2.savefig(FIGUREFOLDER + "MT_11S_zoomed.svg")
 
 
 # %%
-rolling_months = 6
+rolling_months = 3
 amoc_rolledmean = amoc_dataset.rolling(time = rolling_months, center=True).mean()
 for key in amoc_rolledmean:
     amoc_rolledmean[key].attrs = amoc_dataset[key].attrs
